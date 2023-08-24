@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Work Experience}
+\cvsection{Experience}
 
 
 %-------------------------------------------------------------------------------
@@ -11,104 +11,172 @@
 
 %---------------------------------------------------------
   \cventry
-    {Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Present} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-      \end{cvitems}
-    }
+  {DevOps | Cloud Engineer} % Job title
+  {Incredevo} % Organization
+  {Warsaw, Poland} % Location
+  {Oct. 2022 - Aug. 2023} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Outsourced part-time (100h/mo) as the only cloud engineer in client's company. Was responsible for implementation from scratch and upkeep of their EKS-based AWS infrastructure,}
+      \item {Researched, evaluated, debugged and sometimes fixed various open-source tools written primarily in Go,}
+      \item {Built up AWS infrastructure from zero using Terraform/Terragrunt,}
+      \item {Set up infrastructure to be deployed to private VPC and accessible through Netbird VPN,}
+      \item {Set up Bottlerocket based EKS cluster configured using kustomization Terraform provider with all the usual cloud controllers,}
+      \item {Set up observability stack using Opensearch, OpenTelemetry and Prometheus,}
+      \item {Set up NLB-based APISIX Ingress Controller with automatic certificates using cert-manager,}
+      \item {Set up Argo Workflows for CI/CD,}
+      \item {Set up rootless container builds in Argo using buildkit or devenv.sh (Nix),}
+      \item {Set up devenv.sh based local development environment,}
+      \item {Set up cluster (Karpenter) and workflows (VPA) autoscalers for cost optimization and automationr,}
+      \item {Rewritten Argo Workflows build project (~14 Java/Maven apps) to build locally without external services using spotify/luigi,}
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
   \cventry
-    {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
-    {
-    }
+  {DevOps | DevEx } % Job title
+  {Fresha} % Organization
+  {Warsaw, Poland} % Location
+  {Nov. 2021 - Oct. 2022} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Member of a team focusing on improving development velocity through CI/CD process and developer's experience improvements,}
+      \item {Worked primarily on complete redesign and simplification of existing - organically acquired over the years - complex processes,}
+      \item {The job involved identifying, measuring and debugging performance and operational issues on very large (30-60 envs, 20+ apps each) EKS cluster dedicated to staging environments,}
+      \item {Set up new deployment and secrets management flow using: ArgoCD, External Secrets Operator and set of Python scripts for repository management,}
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
   \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
-      \end{cvitems}
-    }
+  {DevOps | Cloud Engineer} % Job title
+  {BEC Poland} % Organization
+  {Warsaw, Poland} % Location
+  {July 2020 - Oct. 2021} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Introduced team to: Terraform, pytest and Terraform SDK,}
+      \item {Introduced team to and provided guidance for custom Terraform providers implementations,}
+      \item {Participated in design and implementation of company-wide cloud platform,}
+      \item {Worked with Azure cloud using Terraform and Python SDK,}
+      \item {Tested infrastructure with pytest and pytest-bdd (Python implementation of Behaviour Driven Development/Gherkin),}
+      \item {Designed and implemented shared testing library to be used by the team and customers,}
+      \item {Designed and implemented developer's environments using: Packer, Vagrant, VirtualBox, Azure DevTest Lab,}
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
   \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May. 2018} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
-      \end{cvitems}
-    }
+  {Kubernetes Administrator | DevOps | Cloud Engineer} % Job title
+  {GFT Poland} % Organization
+  {Warsaw, Poland} % Location
+  {Jan. 2019 - June 2020} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Introduced team to Terraform and Kubernetes,}
+      \item {Participated in fast-paced infrastructure development in a large team,}
+      \item {Participated in development, automation and coordination of workflow across many programming teams and projects,}
+      \item {Was sole person responsible for deploying, configuring and managing Kubernetes clusters,}
+      \item {Provided initial deployment and guidance for Hashicorp Vault, ELK stack and Prometheus,}
+      \item {Deployment and management of Kubernetes cluster backed by Rancher (Custom Nodes) on AWS EC2,}
+      \item {Implemented AWS Lambda function overseeing Kubernetes cluster nodes with assistance of AutoScaling Groups,}
+      \item {Implemented infrastructure development workflow including mass-execution, validation and automation for Terraform,}
+      \item {Implemented in-cluster network monitoring solution using Calico (iptables) logs and Prometheus,}
+      \item {Implemented Kubernetes cluster extensions and validation using Webhooks and Custom Resources,}
+      \item {Used/integrated with: Gatekeeper, Istio, Spinnaker, Okta, Datadog, Artifactory, CircleCI, GitHub,}
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
-      \end{cvitems}
-    }
+  {department CTO | Software Architect | Python Developer | Linux Administrator | DevOps} % Job title
+  {Daftcode} % Organization
+  {Warsaw, Poland} % Location
+  {Jun. 2016 - Dec. 2018} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Started as a software architect and a backend developer with some operational skills, then gradually moved to full-time infrastructure administration and devops role,}
+      \item {Developed application's prototype (Python 2, Django) into a dynamically growing project,}
+      \item {Implemented fully self-hosted infrastructure - without third party services,}
+      \item {Designed from ground up then migrated existing codebase to the new implementation based on Python 3, Django REST Framework and Celery,}
+      \item {Migrated manually managed on-premise environment to semi-automated (Ansible and Supervisord) deployment onto AWS EC2 split into production and development envrionment,}
+      \item {Unified error reporting with Sentry and streamlined deployment with BuildBot + Ansible,}
+      \item {Implemented SSH based infrastructure access management with quick access revocation and automated setup of team's machines,}
+      \item {Configured data analysis and monitoring with ELK stack,}
+      \item {Configured zero interruption deployments with uWSGI zerg mode,}
+      \item {Configured live performance monitoring and alerting with ELK stack and Prometheus,}
+      \item {Created terraform-provider-scripted,}
+      \item {Implemented single-command Kubernetes cluster deployment and management using Terraform, kops and Python scripts,}
+      \item {Implemented Kubernetes cluster hardening: private network, NetworkPolicy, PodSecurityPolicy, kube2iam, in-cluster SSL authentication, etc.,}
+      \item {Deployed on Kubernetes: Docker Registry, Helm, S3-backed Vault and Gitlab, cert-manager, Prometheus stack, metrics-server, efs-provider, etc.}
+      \item {Implemented application infrastructure deployment onto Kubernetes based on Gitlab CI and Helm.}
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-        \item {Implemented a distributed web stress test tool with high anonymity.}
-        \item {Implemented a military cooperation system which is web based real time messenger in Scala on Lift.}
-      \end{cvitems}
-    }
+  {Django Developer} % Job title
+  {10Clouds} % Organization
+  {Warsaw, Poland} % Location
+  {Aug. 2015 - May 2016} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Tested then migrated an existing Django REST Framework \& PostgreSQL tenants based SaaS from Python 2 to Python 3,}
+      \item {Developed and maintained above mentioned backend and occasionaly frontend: Angular 1.3, CoffeeScript, ES6, SASS}
+      \item {Designed and implemented Django REST Framework based backend,}
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
-        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-      \end{cvitems}
-    }
+  {Lead Python Developer} % Job title
+  {JMR Technologies} % Organization
+  {Warsaw, Poland} % Location
+  {Nov. 2014 - Jun. 2015} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Was primary Python developer in a company adopting Python for selected projects,}
+      \item {Designed and implemented of Django based CRM,}
+      \item {Gave occasional assistance to Odoo team.}
+    \end{cvitems}
+  }
+
+%---------------------------------------------------------
+  \cventry
+  {Full-stack Software Developer} % Job title
+  {Freelance project} % Organization
+  {Poland} % Location
+  {Apr. 2014 - Jun. 2015} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Implemented and deployed Django REST Framework backed CMS/knowledge base,}
+      \item {Implemented JavaScript (Dojo Toolkit 1) based desktop application (TideSDK, NW.js, then Electron) backed by aforementioned backend.}
+    \end{cvitems}
+  }
+
+%---------------------------------------------------------
+  \cventry
+  {Open Source contributions} % Job title
+  {} % Organization
+  {} % Location
+  {} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Go: \href{https://github.com/prometheus/prom2json/pull/35}{prometheus/prom2json}: implement reading metrics from stdin or file (only URLs were supported),}
+      \item {Go: \href{https://github.com/netbirdio/netbird/pull/612}{netbirdio/netbird} VPN: fixed and tested errors with network routing,}
+      \item {Go+k8s: \href{https://github.com/kubernetes/kubernetes/pull/109361}{kubectl drain} improvements helping with cleanly scaling down cluster to zero,}
+      \item {Go+k8s: \href{https://github.com/argoproj/gitops-engine/pull/461}{gitops-engine/Argo CD} add proper handling when etcd hiccups (eg: GC) occur,}
+      \item {Go+k8s: \href{https://github.com/helm/chart-testing/pull/396}{helm/chart-testing}: implementing passing of additional flags to helm command,}
+      \item {Go+k8s: \href{https://github.com/rook/rook/pull/9967}{rook}: enabled support for running on NixOS by adding NixOS-specific PATH,}
+      \item {Go+tf+k8s: \href{https://github.com/kbst/terraform-provider-kustomization/pull/220}{terraform-provider-kustomization} added handling of remaining kustomize flags, }
+      \item {Go+TF: \href{https://github.com/hashicorp/terraform-provider-vault/pull/321}{terraform-provider-vault}: improved handling of groups and policies assignments,}
+      \item {Go+TF: created \href{https://github.com/daftcode/terraform-provider-scripted}{daftcode/terraform-provider-scripted} as a first touch with Terraform and Go,}
+      \item {Go+TF: created \href{https://github.com/nazarewk-iac/terraform-provider-custom}{nazarewk-iac/terraform-provider-custom} refined and properly designed implementation of above,}
+      \item {Python+AWS: \href{https://github.com/Nike-Inc/gimme-aws-creds/pull/119}{Nike-Inc/gimme-aws-creds}: large refactor to enable using the tool in CI and as a library,}
+      \item {Nix: various contributions to and packaging fixes for \href{https://github.com/NixOS/nixpkgs}{NixOS/nixpkgs},}
+      \item {Nix+containers: \href{https://github.com/cachix/devenv/pull/503}{devenv}: enable building containers in CI using Nix's Flakes,}
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
 \end{cventries}
