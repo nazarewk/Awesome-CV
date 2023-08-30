@@ -17,7 +17,8 @@
   {Oct. 2022 - Aug. 2023} % Date(s)
   {
     \begin{cvitems} % Description(s) of tasks/responsibilities
-      \item {Outsourced part-time (100h/mo) as the only cloud engineer in client's company. Was responsible for implementation from scratch and upkeep of their EKS-based AWS infrastructure,}
+      \item {Outsourced part-time (100h/mo) as the only cloud engineer in client's company. Was primarily responsible for implementation from scratch and upkeep of their EKS-based AWS infrastructure,}
+      \item {Started by automating and forcing the build process to be reproducible for ~15 Java applications without versioning packaged into 8 containers,}
       \item {Researched, evaluated, debugged and sometimes fixed various open-source tools written primarily in Go,}
       \item {Built up AWS infrastructure from zero using Terraform/Terragrunt,}
       \item {Set up infrastructure to be deployed to private VPC and accessible through Netbird VPN,}
@@ -27,8 +28,10 @@
       \item {Set up Argo Workflows for CI/CD,}
       \item {Set up rootless container builds in Argo using buildkit or devenv.sh (Nix),}
       \item {Set up devenv.sh based local development environment,}
-      \item {Set up cluster (Karpenter) and workflows (VPA) autoscalers for cost optimization and automationr,}
-      \item {Rewritten Argo Workflows build project (~14 Java/Maven apps) to build locally without external services using spotify/luigi,}
+      \item {Rewritten the build process from Bitbucket Pipelines to Argo Workflows,}
+      \item {Set up cluster (Karpenter) and workflows (VPA) autoscalers for cost optimization,}
+      \item {Rewritten the build process from Argo Workflows to spotify/luigi for a local execution and easier handover,}
+      \item {Prepared a NixOS-based EC2 instance capable of running all the tooling to be used as a last-resort when Mac setup breaks,}
     \end{cvitems}
   }
 
@@ -40,10 +43,11 @@
   {Nov. 2021 - Oct. 2022} % Date(s)
   {
     \begin{cvitems} % Description(s) of tasks/responsibilities
-      \item {Member of a team focusing on improving development velocity through CI/CD process and developer's experience improvements,}
+      \item {Member of a team focusing on increasing development velocity through CI/CD process and developer's experience improvements,}
+      \item {Successfully cut Datadog monitoring costs by a third through refining gathered data,}
       \item {Worked primarily on complete redesign and simplification of existing - organically acquired over the years - complex processes,}
-      \item {The job involved identifying, measuring and debugging performance and operational issues on very large (30-60 envs, 20+ apps each) EKS cluster dedicated to staging environments,}
-      \item {Set up new deployment and secrets management flow using: ArgoCD, External Secrets Operator and set of Python scripts for repository management,}
+      \item {The job involved identifying, measuring and debugging performance and operational issues on very large (30-60 envs, 20+ apps each, multiple deployments per hour) EKS cluster dedicated to staging environments,}
+      \item {Set up new deployment and secrets management flow using: ArgoCD, External Secrets Operator and a set of Python scripts for the GitOps repository management \& optimization,}
     \end{cvitems}
   }
 
@@ -55,9 +59,9 @@
   {July 2020 - Oct. 2021} % Date(s)
   {
     \begin{cvitems} % Description(s) of tasks/responsibilities
-      \item {Introduced team to: Terraform, pytest and Terraform SDK,}
+      \item {Introduced ~5 man team to: Terraform, pytest and Terraform SDK,}
       \item {Introduced team to and provided guidance for custom Terraform providers implementations,}
-      \item {Participated in design and implementation of company-wide cloud platform,}
+      \item {Participated in design and implementation of company-wide Azure based cloud platform,}
       \item {Worked with Azure cloud using Terraform and Python SDK,}
       \item {Tested infrastructure with pytest and pytest-bdd (Python implementation of Behaviour Driven Development/Gherkin),}
       \item {Designed and implemented shared testing library to be used by the team and customers,}
@@ -73,17 +77,17 @@
   {Jan. 2019 - June 2020} % Date(s)
   {
     \begin{cvitems} % Description(s) of tasks/responsibilities
-      \item {Introduced team to Terraform and Kubernetes,}
+      \item {Introduced 6-man team to Terraform and Kubernetes,}
       \item {Participated in fast-paced infrastructure development in a large team,}
       \item {Participated in development, automation and coordination of workflow across many programming teams and projects,}
-      \item {Was sole person responsible for deploying, configuring and managing Kubernetes clusters,}
+      \item {Was the only person responsible for deploying, configuring and managing pre-production Kubernetes clusters,}
       \item {Provided initial deployment and guidance for Hashicorp Vault, ELK stack and Prometheus,}
       \item {Deployment and management of Kubernetes cluster backed by Rancher (Custom Nodes) on AWS EC2,}
       \item {Implemented AWS Lambda function overseeing Kubernetes cluster nodes with assistance of AutoScaling Groups,}
       \item {Implemented infrastructure development workflow including mass-execution, validation and automation for Terraform,}
       \item {Implemented in-cluster network monitoring solution using Calico (iptables) logs and Prometheus,}
       \item {Implemented Kubernetes cluster extensions and validation using Webhooks and Custom Resources,}
-      \item {Used/integrated with: Gatekeeper, Istio, Spinnaker, Okta, Datadog, Artifactory, CircleCI, GitHub,}
+      \item {Used/integrated with: Gatekeeper, Istio, Okta, Datadog, Artifactory, CircleCI, GitHub, Spinnaker,}
     \end{cvitems}
   }
 
@@ -95,21 +99,20 @@
   {Jun. 2016 - Dec. 2018} % Date(s)
   {
     \begin{cvitems} % Description(s) of tasks/responsibilities
-      \item {Started as a software architect and a backend developer with some operational skills, then gradually moved to full-time infrastructure administration and devops role,}
+      \item {Started as the most experienced backend developer on the team with some sysadmin skills, then gradually moved to full-time infrastructure administration and devops role,}
       \item {Developed application's prototype (Python 2, Django) into a dynamically growing project,}
-      \item {Implemented fully self-hosted infrastructure - without third party services,}
       \item {Designed from ground up then migrated existing codebase to the new implementation based on Python 3, Django REST Framework and Celery,}
-      \item {Migrated manually managed on-premise environment to semi-automated (Ansible and Supervisord) deployment onto AWS EC2 split into production and development envrionment,}
+      \item {Migrated manually managed on-premise environment to semi-automated (Ansible and Supervisord) deployment onto AWS EC2-based infrastructure split into production and development envrionment,}
       \item {Unified error reporting with Sentry and streamlined deployment with BuildBot + Ansible,}
-      \item {Implemented SSH based infrastructure access management with quick access revocation and automated setup of team's machines,}
+      \item {Implemented SSH based infrastructure access management with quick access revocation and automated setup of developers's machines,}
       \item {Configured data analysis and monitoring with ELK stack,}
-      \item {Configured zero interruption deployments with uWSGI zerg mode,}
-      \item {Configured live performance monitoring and alerting with ELK stack and Prometheus,}
+      \item {Achieved zero-interruption deployments with uWSGI zerg mode,}
+      \item {Configured live performance monitoring and alerting with ELK stack and Prometheus (mostly providing data to Kiosk-style dashboard running 24/7 in the office),}
       \item {Created terraform-provider-scripted,}
       \item {Implemented single-command Kubernetes cluster deployment and management using Terraform, kops and Python scripts,}
       \item {Implemented Kubernetes cluster hardening: private network, NetworkPolicy, PodSecurityPolicy, kube2iam, in-cluster SSL authentication, etc.,}
       \item {Deployed on Kubernetes: Docker Registry, Helm, S3-backed Vault and Gitlab, cert-manager, Prometheus stack, metrics-server, efs-provider, etc.}
-      \item {Implemented application infrastructure deployment onto Kubernetes based on Gitlab CI and Helm.}
+      \item {Implemented application infrastructure deployment on top of Kubernetes based on Gitlab CI and Helm.}
     \end{cvitems}
   }
 
@@ -123,7 +126,7 @@
     \begin{cvitems} % Description(s) of tasks/responsibilities
       \item {Tested then migrated an existing Django REST Framework \& PostgreSQL tenants based SaaS from Python 2 to Python 3,}
       \item {Developed and maintained above mentioned backend and occasionaly frontend: Angular 1.3, CoffeeScript, ES6, SASS}
-      \item {Designed and implemented Django REST Framework based backend,}
+      \item {Designed and implemented Django REST Framework based backend in another project,}
     \end{cvitems}
   }
 
@@ -135,7 +138,7 @@
   {Nov. 2014 - Jun. 2015} % Date(s)
   {
     \begin{cvitems} % Description(s) of tasks/responsibilities
-      \item {Was primary Python developer in a company adopting Python for selected projects,}
+      \item {Was primary Python developer in a company newly adopting Python for selected projects,}
       \item {Designed and implemented of Django based CRM,}
       \item {Gave occasional assistance to Odoo team.}
     \end{cvitems}
