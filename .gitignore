@@ -1,30 +1,34 @@
-### TeX ###
-## Core latex/pdflatex auxiliary files:
-*.aux
-*.lof
-*.log
-*.lot
-*.fls
-*.out
-*.toc
+###
+### START ignore everything
+###
+# ignore everything by default
+*
+# do not ignore directories (still ignores their content)
+!*/
+# still ignore directories with a leading dot
+.*/
+# do not ignore .gitignore files
+!.gitignore
+###
+### END ignore everything
+###
 
-## Intermediate documents:
-*.dvi
-*-converted-to.*
+!*.tex
+!/*.cls
+!/documents/*.pdf
+!/documents/profile.png
+!/icon.png
+!/LICENCE
+!/Makefile
 
-### Editor ###
-## Vim & Emacs temp files:
-.*sw[op]
-*~
 
-### Mac OS X ###
-## Mac OS X metadata files:
-*.DS_Store
-
-### IDEs ###
-.idea/
-
-### devenv ###
-.devenv/
-.direnv/
 !/.envrc
+!/.gitattributes
+!/.yamllint.yaml
+
+!*.md
+!*.nix
+!/flake.{nix,lock}
+
+!/.github/CODEOWNERS
+!/.github/**/*.y?ml
