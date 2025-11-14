@@ -28,7 +28,13 @@
 
 !*.md
 !*.nix
+.*.nix
 !/flake.{nix,lock}
 
 !/.github/CODEOWNERS
 !/.github/**/*.y?ml
+
+# Devenv
+!/devenv.nix
+!/devenv.lock
+!/devenv.yaml
