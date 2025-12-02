@@ -17,6 +17,10 @@ This is a personal fork of https://github.com/posquit0/Awesome-CV repository.
 Last few years I had an Awesome-CV backed Overleaf project, but decided I need to rewrite it and thought 
 it would be easier to track changes in a Git repository and build it with [Nix](https://github.com/NixOS).
 
+## Relevant files
+
+- [documents/cv.pdf](documents/cv.pdf)
+
 ## What is Awesome CV?
 
 **Awesome CV** is LaTeX template for a **CV(Curriculum Vitae)**, **Résumé** or **Cover Letter** inspired
